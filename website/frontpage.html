@@ -6,12 +6,23 @@
 <title>ecr.gg</title>
 <style>
   body {
-    background-color: black;
-    color: white;
+    margin: 0; 
+    overflow: hidden;
   }
 </style>
 </head>
 <body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var iframe = document.createElement('iframe');
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.border = 'none';
+    document.body.appendChild(iframe);
+    iframe.src = 'frontpage.html';
+  });
+</script>
 
 </body>
 </html>
