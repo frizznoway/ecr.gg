@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ecr.gg</title>
+<style>
+  body {
+    margin: 0; 
+    overflow: hidden;
+  }
+</style>
+</head>
+<body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var iframe = document.createElement('iframe');
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.border = 'none';
+    document.body.appendChild(iframe);
+    iframe.src = 'frontpage.html';
+  });
+</script>
+
+</body>
+</html>
