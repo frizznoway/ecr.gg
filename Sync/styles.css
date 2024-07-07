@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #062966;
+    height: 200vh; /* Increased height to allow scrolling */
+    overflow-x: hidden; /* Remove horizontal scrollbars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discord-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    position: fixed; /* Fixed positioning for the Discord button */
+    top: 20px; /* Adjust the top position */
+    right: 20px; /* Adjust the right position */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.discord-button {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to perfectly center vertically */
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Lower z-index to ensure it's behind other elements */
+}
+
+.sync-gif {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Fade-in effect */
+}
+
+.center-image {
+    max-width: 90vw; /* Large image size */
+    max-height: 50vh; /* Ensure it fits within the viewport */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Adjust the margin to control spacing */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
